@@ -29,6 +29,7 @@
     
     .follow-us_img {
         border-radius: 50%;
+        width: 200px;
         height: 170px;
         opacity: 0.5;
     }
@@ -38,6 +39,10 @@
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transition: 1s;
+    }
+    
+    form {
+        align-self: center;
     }
     
     .btn {
