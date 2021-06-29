@@ -1,0 +1,35 @@
+main {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px;
+}
+
+.text_activities {
+    width: 40%;
+}
+
+.elements1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.elements2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.roundphoto {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;}
