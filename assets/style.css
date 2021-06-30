@@ -6,11 +6,17 @@
         margin-top: 10vh;
     }
     
-    h1 {
+    h2,
+    h3 {
         text-align: center;
     }
     
-    .about_structure,
+    .about_structure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
     .supporters_structure,
     .follow-us_structure {
         display: flex;
@@ -18,20 +24,27 @@
         margin-top: 10vh;
     }
     
-    .about_layout,
+    .about_layout {
+        align-self: center;
+    }
+    
     .supporters_layout,
     .follow-us_layout {
         display: flex;
         flex-flow: column wrap;
         margin: 0 auto;
         align-content: center;
+        margin: 30px;
+    }
+    
+    .supporters_layout_image {
+        align-self: center;
     }
     
     .follow-us_img {
-        border-radius: 50%;
-        width: 200px;
-        height: 170px;
-        opacity: 0.5;
+        width: 100px;
+        height: 100px;
+        align-self: center;
     }
     
     .follow-us_img:hover {
@@ -39,6 +52,7 @@
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transition: 1s;
+        cursor: pointer;
     }
     
     form {
