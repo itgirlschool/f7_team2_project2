@@ -1,0 +1,29 @@
+.container_help {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.col1,
+.col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.help_btn {
+    margin: 35px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 25vw;
+    height: 15vh;
+}
+
+.help_btn:hover {
+    cursor: pointer;
+}
