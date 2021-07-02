@@ -27,9 +27,16 @@ h2 {
     align-items: center;
     margin: 30px;
 }
+@media screen and (max-width: 1023px) {
+.elements{display: flex;}
+    .elements1,
+    .elements2  {
+        flex-direction: column;
+    }
 
+}
 .roundphoto {
     margin: 20px;
     width: 200px;
     height: 200px;
-    border-radius: 50%;}
+}
