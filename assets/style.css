@@ -39,6 +39,8 @@
     
     .supporters_layout_image {
         align-self: center;
+        width: 200px;
+        border-radius: 50%;
     }
     
     .follow-us_img {
