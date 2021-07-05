@@ -59,7 +59,10 @@ li {
 
 .about,
 .supporters,
-.follow-us {
+.follow-us,
+.actions,
+.container_news,
+.container_help  {
     margin-top: 10vh;
 }
 
