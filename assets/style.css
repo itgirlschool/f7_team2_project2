@@ -1,6 +1,7 @@
 main {
     max-width: 1800px;
     margin: 0 auto;
+    margin: auto;
 }
 
 h2 {
@@ -35,6 +36,15 @@ h2 {
     }
 
 }
+@media screen and (max-width: 639px) {
+    .elements{display: flex;
+        flex-direction: column
+    }
+        .elements1,
+        .elements2  {
+            flex-direction: column;
+        }
+    }    
 .roundphoto {
     margin: 20px;
     width: 200px;

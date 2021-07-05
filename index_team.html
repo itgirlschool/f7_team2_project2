@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            max-width: 1800px;
+            margin: 0 auto;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 15px;
+        }
+
+        .text_activities {
+            width: 40%;
+        }
+            .elements123 {
+            display: flex;
+        }
+        .elements456{
+            display: flex;}
+
+        .elements1,
+            .elements2,
+            .elements3,
+            .elements4,
+            .elements5,
+            .elements6{ width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 30px;}
+    
+        @media screen and (max-width: 1023px) {
+            .elements123 { display: flex;
+                flex-wrap: wrap;
+            }
+            .elements456{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .elements1,
+            .elements2,
+            .elements3,
+            .elements4,
+            .elements5,
+            .elements6 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 30px;
+            }
+        }
+
+        @media screen and (max-width: 639px) {
+            .elements {
+                display: flex;
+                flex-direction: column
+            }
+
+            .elements1,
+            .elements2,
+            .elements3,
+            .elements4,
+            .elements5,
+            .elements6 {
+                flex-direction: column;
+            }
+        }
+
+        .roundphoto {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+        }
+       .mail{
+        text-decoration:none;
+        color: #004d89 ;
+       }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Actions</h2>
+        <div class="elements123">
+            <div class="elements1">
+                <img src="assets/images/Polina.png" class="roundphoto" alt="">
+                <div class="text_activities">
+                    Polina Shubina
+                    Artistic Director, Co-founder and Board Member
+                <a class="mail" href="mailto:polina@floatingeka.com">polina@floatingeka.com</a>
+                </div>
+            </div>
+            <div class="elements2">
+                <img src="assets/images/Olesya.png" class="roundphoto" alt="">
+                <div class="text_activities">Olesya Radilova
+                    Development Director, Co-founder and Board Member
+                    <a class="mail" href="mailto:radilova@floatingeka.com">radilova@floatingeka.com</a>
+                </div>
+            </div>
+            <div class="elements3">
+                <img src="assets/images/Yana.png" class="roundphoto" alt="">
+                <div class="text_activities">Yana Kronevald
+                    SMM Specialist
+                    <a class="mail" href="mailto:yana@floatingeka.com ">yana@floatingeka.com </a>
+                </div>
+            </div>
+        </div>
+        <div class="elements456">
+        <div class="elements4">
+            <img src="assets/images/Aya.png" class="roundphoto" alt="">
+            <div class="text_activities">Aikokul Ibraeva
+                SMM Specialist
+                <a class="mail" href="mailto:aya@floatingeka.com "> aya@floatingeka.com </a>
+            </div>
+        </div>
+        <div class="elements5">
+            <img src="assets/images/Inna.png" class="roundphoto" alt="">
+            <div class="text_activities">Inna Panchkovskaya
+                Administrative Director
+            </div>
+        </div>
+        <div class="elements6">
+            <img src="assets/images/Mikita.png" class="roundphoto" alt="">
+            <div class="text_activities">Mikita Makayou
+                Board Member
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>
