@@ -27,3 +27,8 @@
 .help_btn:hover {
     cursor: pointer;
 }
+
+.container_news {
+    display: flex;
+
+}
