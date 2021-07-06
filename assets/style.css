@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    margin: 0 auto;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 #content {
-	padding: 100px;	
+	padding-bottom: 100px;	
 }
 
 /* Стили для header */
@@ -26,7 +27,8 @@ body {
     align-items: center;
     padding: 0 2vw;
     background-color: #004d89;
-
+    position: relative;
+    z-index: 2;
 }
 
 .navbar {
@@ -109,7 +111,6 @@ body {
 
 .btn-primary:hover {
     color:#004d89;
-    /* border: 5px solid #f3c044; */
     background-color: rgba(243, 192, 68, 1);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -187,6 +188,16 @@ h2 {
 
 li {
     list-style-type: none;
+}
+
+/* Галерея */
+
+.carousel {
+    z-index: 1;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 /* section about*/
@@ -279,6 +290,10 @@ form {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup form {
+    display: contents;
 }
 
 @media all and (max-width: 1023px) {
