@@ -1,3 +1,137 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+#content {
+	padding: 100px;	
+}
+
+/* Стили для header */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2vw;
+    background-color: #004d89;
+
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0.7vw;
+}
+
+.navbar-nav {
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.header_logo {
+    width: 6vw;
+}
+
+.logo_img {
+    width: 100%;
+}
+
+.header-nav-item {
+    font-size: 1.1vw;
+}
+
+.header-nav-item:hover {
+    background-color: #f3c044;
+    color: #004d89;
+    font-weight: 500;
+
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.header-nav-link {
+    color: white;
+    padding: 3vw;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding: 3vw;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: #004d89;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: rgba(243, 192, 68, 0);
+}
+
+.btn-donate {
+    width: 14vw;
+}
+
+.btn-header {
+    padding: 1vw 4vw;
+    background-color: #f3c044;
+    color: #004d89;
+    font-weight: 600;
+    margin-right: 2vw;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    color:#004d89;
+    /* border: 5px solid #f3c044; */
+    background-color: rgba(243, 192, 68, 1);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-light .navbar-toggler {
+    color: white
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(./images/menu-humburger.svg);
+    opacity: 0.9;
+}
+
+
 .container_help {
     display: flex;
     flex-direction: column;
@@ -229,4 +363,92 @@ h2 {
     margin: 20px;
     width: 200px;
     height: 200px;
+}
+
+/* Стили для footer */
+
+footer {
+    font-size: 1vw;
+    background-image: url(./images/wave.png);
+    background-size: cover;
+    background-position: right bottom;
+    padding: 2vw 2vw 7vw 2vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    padding: 0 3vw;
+}
+
+.btn-secondary {
+    background-color: rgba(0, 0, 0, 0);
+    color: #004d89;
+    border: none;
+    margin-bottom: 1vw;
+}
+
+.btn-secondary:hover {
+    background-color: #f3c044;
+    border: none;
+    color: #004d89;
+}
+
+.footer_contacts {
+    width: 15vw;
+}
+
+.contacts_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.social_youtube, .social_instagram, .social_facebook {
+    width: 2vw;
+}
+
+.social_img {
+    width: 100%;
+}
+
+.contacts_href {
+    margin-top: 2vw;
+}
+
+.href {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+.footer_props {
+    width: 50vw;
+    display: flex;
+}
+
+.props_association, .props_payment, .props_account {
+    padding-right: 2vw;
+}
+
+.footer_logo {
+    left: 90%;
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: -33px;
+}
+
+.logo_flogo {
+    width: 4vw;
+    margin: 0 0 0 1.7vw;
+}
+
+.logo_text {
+    font-size: 0.9vw;
+    margin-top: 0.4vw;
+}
+
+.flogo_fimg {
+    width: 100%;
 }
