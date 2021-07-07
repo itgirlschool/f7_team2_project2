@@ -419,11 +419,20 @@ footer {
     padding: 0 3vw;
 }
 
+.footer-sec-1 {
+    display: flex;
+}
+
+.footer-nav {
+    margin-right: 7vw;
+}
+
 .btn-secondary {
     background-color: rgba(0, 0, 0, 0);
     color: #004d89;
     border: none;
     margin-bottom: 1vw;
+    font-size: 1vw;
 }
 
 .btn-secondary:hover {
@@ -488,4 +497,139 @@ footer {
 
 .flogo_fimg {
     width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+
+    .donate_flex {
+        padding: 0.5vw 2.5vw;
+        display: flex;
+        align-items: center;
+        font-size: 1.5vw;
+    }
+
+    #top {
+        right: 7vw;
+        top: 1vw;
+        position: fixed;
+        margin: 0;
+    }
+
+    .footer {
+        display: block;
+        max-width: 990px;
+        margin: 0 auto;
+        padding: 2vw 0vw 21vw 2vw;
+        font-size: 1.5vw;
+    }
+
+    .footer-sec-1 {
+        justify-content: center;
+    }
+
+    .btn-secondary {
+        font-size: 1.5vw;
+    }
+
+    .footer_props {
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 8vw;
+        width: 70vw;
+    }
+
+    .footer_logo {
+        left: 75%;
+        position: absolute;
+        margin-top: 0vw;
+        margin-left: -36px;
+    }
+
+    .logo_text {
+        font-size: 1.5vw;
+    }
+
+    .logo_flogo {
+        width: 7vw;
+        margin: -3vw -3px 1vw 6vw;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    .donate_flex {
+        padding: 1.5vw 5.5vw;
+        display: flex;
+        align-items: center;
+        font-size: 3vw;
+    }
+
+    #top {
+        right: 628px;
+        top: 313px;
+        font-size: 3vw;
+        position: fixed;
+        margin: 0;
+    }
+
+    footer {
+        padding: 2vw 0vw 34vw 2vw;
+    }
+
+    .footer {
+        font-size: 3vw;
+    }
+    .footer-sec-1 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin: 0 auto;
+        padding-bottom: 3vw;
+    }
+
+    .btn-secondary {
+        font-size: 3vw;
+    }
+
+    .footer_contacts {
+        margin: 0 auto;
+        text-align: center;
+        width: max-content;
+    }
+
+    .social_youtube, .social_instagram, .social_facebook {
+        width: 5vw;
+        padding-bottom: 4vw;
+    }
+
+    .footer_props {
+        display: block;
+        width: max-content;
+    }
+
+    .props {
+        padding-bottom: 6vw;
+        text-align: center;
+    }
+
+    .footer_logo {
+        left: 73%;
+        position: absolute;
+        margin-top: 0vw;
+        margin-left: -41px;
+    }
+
+    .logo_flogo {
+        width: 15vw;
+        margin: 0vw 0px 0vw 11vw;
+    }
+
+    .logo_text {
+        font-size: 3vw;
+        width: max-content;
+        color: white;
+    }
 }
