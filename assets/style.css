@@ -11,13 +11,13 @@ body {
 }
 
 #wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
 }
 
 #content {
-	padding-bottom: 100px;	
+    padding-bottom: 100px;
 }
 
 /* Стили для header */
@@ -84,15 +84,20 @@ body {
     color: #004d89;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
     color: white;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: white;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: rgba(243, 192, 68, 0);
 }
 
@@ -108,7 +113,7 @@ body {
     top: 1.8vw;
     text-transform: uppercase;
     background: rgba(243, 192, 68, 1);
-    color:#004d89;
+    color: #004d89;
 }
 
 .btn-primary:hover {
@@ -133,7 +138,7 @@ body {
 }
 
 #top {
-    display:none;
+    display: none;
     position: fixed;
     right: 1.25vw;
     top: 1.9vw;
@@ -229,7 +234,7 @@ li {
 .follow-us,
 .actions,
 .container_news,
-.container_help  {
+.container_help {
     margin-top: 10vh;
 }
 
@@ -362,7 +367,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
 }
 
 .elements2 {
@@ -370,7 +374,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -451,7 +454,9 @@ footer {
     align-items: flex-end;
 }
 
-.social_youtube, .social_instagram, .social_facebook {
+.social_youtube,
+.social_instagram,
+.social_facebook {
     width: 2vw;
 }
 
@@ -474,7 +479,9 @@ footer {
     display: flex;
 }
 
-.props_association, .props_payment, .props_account {
+.props_association,
+.props_payment,
+.props_account {
     padding-right: 2vw;
 }
 
@@ -579,6 +586,7 @@ footer {
     .footer {
         font-size: 3vw;
     }
+
     .footer-sec-1 {
         display: block;
         margin: 0 auto;
@@ -600,7 +608,9 @@ footer {
         width: max-content;
     }
 
-    .social_youtube, .social_instagram, .social_facebook {
+    .social_youtube,
+    .social_instagram,
+    .social_facebook {
         width: 5vw;
         padding-bottom: 4vw;
     }
