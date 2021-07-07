@@ -9,60 +9,29 @@ h2 {
 }
 
 .text_activities {
-    width: 40%;
+    width: 9em;
 }
-    .elements123 {
-    display: flex;
-}
-.elements456{
-    display: flex;}
 
-.elements1,
-    .elements2,
-    .elements3,
-    .elements4,
-    .elements5,
-    .elements6{ width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;}
-
-@media screen and (max-width: 1023px) {
-    .elements123 { display: flex;
-        flex-wrap: wrap;
-    }
-    .elements456{
+.team-members-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-    .elements1,
-    .elements2,
-    .elements3,
-    .elements4,
-    .elements5,
-    .elements6 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-    }
+
+.team_member {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    flex-basis: 30%;
 }
 
 @media screen and (max-width: 639px) {
-    .elements {
-        display: flex;
-        flex-direction: column
-    }
 
-    .elements1,
-    .elements2,
-    .elements3,
-    .elements4,
-    .elements5,
-    .elements6 {
+    .team_member {
+        display: flex;
         flex-direction: column;
     }
 }
@@ -72,7 +41,8 @@ h2 {
     width: 200px;
     height: 200px;
 }
-.mail{
-text-decoration:none;
-color: #004d89 ;
+
+.mail {
+    text-decoration: none;
+    color: #004d89;
 }
