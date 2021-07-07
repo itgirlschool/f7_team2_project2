@@ -1,3 +1,165 @@
+html {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+#content {
+    padding-bottom: 100px;
+}
+
+
+/* Стили для header */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2vw;
+    background-color: #004d89;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0.7vw;
+}
+
+.navbar-nav {
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.header_logo {
+    width: 6vw;
+}
+
+.logo_img {
+    width: 100%;
+}
+
+.header-nav-item {
+    font-size: 1.1vw;
+}
+
+.header-nav-item:hover {
+    background-color: #f3c044;
+    color: #004d89;
+    font-weight: 500;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.header-nav-link {
+    color: white;
+    padding: 3vw;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding: 3vw;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: #004d89;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgba(243, 192, 68, 0);
+}
+
+.btn-donate {
+    width: 14vw;
+}
+
+.btn-header {
+    font-weight: 600;
+    font-size: 1.2vw;
+    right: 3.4vw;
+    top: 1.8vw;
+    text-transform: uppercase;
+    background: rgba(243, 192, 68, 1);
+    color: #004d89;
+}
+
+.btn-primary:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+/* .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
+
+.navbar-light .navbar-toggler {
+    color: white
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(./images/menu-hamburger.svg);
+    opacity: 0.9;
+}
+
+#top {
+    display: none;
+    position: fixed;
+    right: 1.25vw;
+    top: 1.9vw;
+    /* background: #004D89; */
+    color: rgba(243, 192, 68, 1);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 4;
+}
+
+.donate_flex {
+    padding: 0.5vw 1.5vw;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.donate_img {
+    margin-right: 1vw;
+}
+
 .container_help {
     display: flex;
     flex-direction: column;
@@ -31,8 +193,6 @@
 .container_news {
     display: flex;
     flex-direction: column;
-
-
 }
 
 h2 {
@@ -42,7 +202,6 @@ h2 {
 .part2 {
     display: flex;
     flex-direction: row;
-
 }
 
 .news_img {
@@ -55,6 +214,18 @@ li {
     list-style-type: none;
 }
 
+
+/* Галерея */
+
+.carousel {
+    z-index: 1;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
 /* section about*/
 
 .about,
@@ -62,7 +233,7 @@ li {
 .follow-us,
 .actions,
 .container_news,
-.container_help  {
+.container_help {
     margin-top: 10vh;
 }
 
@@ -147,6 +318,10 @@ form {
     font: 14px Helvetica, Arial, sans-serif;
 }
 
+#mc_embed_signup form {
+    display: contents;
+}
+
 @media all and (max-width: 1023px) {
     .supporters_structure {
         display: flex;
@@ -160,12 +335,10 @@ form {
         flex-direction: column;
         align-items: center;
     }
-
     .follow-us_left {
         display: flex;
         justify-content: flex-end;
     }
-
     .follow-us_right {
         display: flex;
         justify-content: center;
@@ -191,7 +364,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
 }
 
 .elements2 {
@@ -199,14 +371,15 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
 }
 
 @media screen and (max-width: 1023px) {
     .elements {
         display: flex;
     }
-
+    .elements2 {
+        justify-content: flex-start;
+    }
     .elements1,
     .elements2 {
         flex-direction: column;
@@ -218,7 +391,6 @@ h2 {
         display: flex;
         flex-direction: column
     }
-
     .elements1,
     .elements2 {
         flex-direction: column;
@@ -229,4 +401,231 @@ h2 {
     margin: 20px;
     width: 200px;
     height: 200px;
+}
+
+
+/* Стили для footer */
+
+footer {
+    font-size: 1vw;
+    background-image: url(./images/wave.png);
+    background-size: cover;
+    background-position: right bottom;
+    padding: 2vw 0vw 7vw 2vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    padding: 0 3vw;
+}
+
+.footer_b {
+    width: 35px;
+}
+
+.footer_b:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: 1s ease-in;
+}
+
+.footer-sec-1 {
+    display: flex;
+}
+
+.footer-nav {
+    margin-right: 7vw;
+}
+
+.btn-secondary {
+    background-color: rgba(0, 0, 0, 0);
+    color: #004d89;
+    border: none;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+
+.btn-secondary:hover {
+    background-color: #f3c044;
+    border: none;
+    color: #004d89;
+}
+
+.footer_contacts {
+    width: 15vw;
+}
+
+.contacts_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.social_youtube,
+.social_instagram,
+.social_facebook {
+    width: 2vw;
+}
+
+.social_img {
+    width: 100%;
+}
+
+.contacts_href {
+    margin-top: 2vw;
+}
+
+.href {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+.footer_props {
+    width: 50vw;
+    display: flex;
+}
+
+.props_association,
+.props_payment,
+.props_account {
+    padding-right: 2vw;
+}
+
+.footer_logo {
+    left: 90%;
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: -33px;
+}
+
+.logo_flogo {
+    width: 4vw;
+    margin: 0 0 0 4vw;
+}
+
+.logo_text {
+    font-size: 0.9vw;
+    margin-top: 0.4vw;
+}
+
+.flogo_fimg {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .donate_flex {
+        padding: 0.5vw 2.5vw;
+        display: flex;
+        align-items: center;
+        font-size: 1.5vw;
+    }
+    #top {
+        right: 7vw;
+        top: 1vw;
+        position: fixed;
+        margin: 0;
+    }
+    .footer {
+        display: block;
+        max-width: 990px;
+        margin: 0 auto;
+        padding: 2vw 0vw 21vw 2vw;
+        font-size: 1.5vw;
+    }
+    .footer-sec-1 {
+        justify-content: center;
+    }
+    .btn-secondary {
+        font-size: 1.5vw;
+    }
+    .footer_props {
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 8vw;
+        width: 70vw;
+    }
+    .footer_logo {
+        left: 75%;
+        position: absolute;
+        margin-top: 0vw;
+        margin-left: -36px;
+    }
+    .logo_text {
+        font-size: 1.5vw;
+    }
+    .logo_flogo {
+        width: 7vw;
+        margin: -3vw -3px 1vw 6vw;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .donate_flex {
+        padding: 1.5vw 5.5vw;
+        display: flex;
+        align-items: center;
+        font-size: 3vw;
+    }
+    #top {
+        right: 628px;
+        top: 313px;
+        font-size: 3vw;
+        position: fixed;
+        margin: 0;
+    }
+    footer {
+        padding: 2vw 0vw 34vw 2vw;
+    }
+    .footer {
+        font-size: 3vw;
+    }
+    .footer-sec-1 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-nav {
+        margin: 0 auto;
+        padding-bottom: 3vw;
+    }
+    .btn-secondary {
+        font-size: 3vw;
+    }
+    .footer_contacts {
+        margin: 0 auto;
+        text-align: center;
+        width: max-content;
+    }
+    .social_youtube,
+    .social_instagram,
+    .social_facebook {
+        width: 5vw;
+        padding-bottom: 4vw;
+    }
+    .footer_props {
+        display: block;
+        width: max-content;
+    }
+    .props {
+        padding-bottom: 6vw;
+        text-align: center;
+    }
+    .footer_logo {
+        left: 73%;
+        position: absolute;
+        margin-top: 0vw;
+        margin-left: -41px;
+    }
+    .logo_flogo {
+        width: 15vw;
+        margin: 0vw 0px 0vw 11vw;
+    }
+    .logo_text {
+        font-size: 3vw;
+        width: max-content;
+        color: white;
+    }
 }
