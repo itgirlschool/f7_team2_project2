@@ -1,6 +1,7 @@
 html {
     height: 100%;
     margin: 0 auto;
+    padding: 0;
 }
 
 body {
@@ -101,28 +102,27 @@ body {
 
 
 .btn-header {
-    padding: 1vw 4vw;
-    background-color: #f3c044;
-    color: #004d89;
     font-weight: 600;
     margin-right: 2vw;
     font-size: 1.2vw;
     text-transform: uppercase;
+    background: rgba(243, 192, 68, 1);
+    color:#004d89;
+    margin-left: -1.4vw;
+    display: flex;
 }
 
 .btn-primary:hover {
-    color:#004d89;
-    background-color: rgba(243, 192, 68, 1);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
 
-.sticky {
+/* .sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-}
+} */
 
 .navbar-light .navbar-toggler {
     color: white
@@ -133,6 +133,28 @@ body {
     opacity: 0.9;
 }
 
+#top {
+    display:none;
+    position: fixed;
+    right: 3.4vw;
+    top: 1.8vw;
+    /* background: #004D89; */
+    color: rgba(243, 192, 68, 1);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 4;
+}
+
+.donate_flex {
+    padding: 0.5vw 1.5vw;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.donate_img {
+    margin-right: 1vw;
+}
 
 .container_help {
     display: flex;
@@ -388,7 +410,7 @@ footer {
     background-image: url(./images/wave.png);
     background-size: cover;
     background-position: right bottom;
-    padding: 2vw 2vw 7vw 2vw;
+    padding: 2vw 0vw 7vw 2vw;
 }
 
 .footer {

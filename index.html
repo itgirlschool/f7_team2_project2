@@ -19,7 +19,7 @@
 
 <body>
     <div id="wrapper">
-        <header class="header sticky">
+        <header class="header">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="#wrapper" onclick="slowScroll('#wrapper')">
                         <div class="header_logo">
@@ -53,11 +53,28 @@
                             </li>
                         </ul>  
                         <div class="btn-donate my-2 my-lg-0">
-                            <button type="button" class="btn btn-primary btn-lg btn-header">DONATE</button>
+                            <a href="https://donorbox.org/floating-eka?default_interval=m" class="btn btn-primary btn-lg btn-header">
+                                <div class="donate_flex">
+                                    <div class="donate_img">
+                                        <img class="donate" src="./assets/images/donate.png" alt="donate">
+                                    </div>
+                                    DONATE
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </nav>
         </header>
+        <div class="btn-donate my-2 my-lg-0" id="top">
+            <a href="https://donorbox.org/floating-eka?default_interval=m" class="btn btn-primary btn-lg btn-header">
+                <div class="donate_flex">
+                    <div class="donate_img">
+                        <img class="donate" src="./assets/images/donate.png" alt="donate">
+                    </div>
+                    DONATE
+                </div>
+            </a>
+        </div>
         <div id="content">
             <main>
                 <!-- Галерея -->
@@ -163,26 +180,26 @@
                     <h2>What Our Supporters Say</h2>
                     <div class="supporters_structure">
                         <div class="supporters_layout">
-                            <img class="supporters_layout_image" src="assets/img/1_Anna Arzamasova.png" alt="image">
+                            <img class="supporters_layout_image" src="assets/img/1_Anna_Arzamasova.png" alt="image">
                             <h3>Anna Arzamasova:</h3>
                             <p>I'm supporting Floating EKA because I find it important to get involved in cool impact-projects when I can. Mine is very much about numbers and precise wording, that is why I really want to be at least slightly related to something
                                 very creative and crazy in a good way, something brave and beautiful.
                             </p>
                         </div>
                         <div class="supporters_layout">
-                            <img class="supporters_layout_image" src="assets/img/2_Lorenzo Reverberi.png" alt="image">
+                            <img class="supporters_layout_image" src="assets/img/2_Lorenzo_Reverberi.png" alt="image">
                             <h3>Lorenzo Reverberi:</h3>
                             <p>My goal is to help create the best environment possible for storytellers to share their stories, for artists to showcase their talents, for communities to connect and be happy together. Floating EKA combines all of the above with ideals
                                 of environmental sustainability, co-creation, and playfulness and fun.</p>
                         </div>
                         <div class="supporters_layout">
-                            <img class="supporters_layout_image" src="assets/img/3_Stanislav Vitko.png" alt="image">
+                            <img class="supporters_layout_image" src="assets/img/3_Stanislav_Vitko.png" alt="image">
                             <h3>Stanislav Vitko: </h3>
                             <p>I like ambitious projects; working on such projects is the most exciting part of life. Even though I know almost nothing about Arts, I can feel the Floating EKA team's passion, and I'm sure this project will bring a lot of joy and
                                 fun for everyone involved.</p>
                         </div>
                         <div class="supporters_layout">
-                            <img class="supporters_layout_image" src="assets/img/4_Olivia Capozzalo.png" alt="image">
+                            <img class="supporters_layout_image" src="assets/img/4_Olivia_Capozzalo.png" alt="image">
                             <h3>Olivia Capozzalo:</h3>
                             <p>I got to watch Floating Eka grow from the inside — from being a dream, a bunch of ideas, excited conversations to a full-fledged organization, realizing its mission. Watching that process and all the passion and hard work it took and
                                 continues to take is a big part of why I support the project.
@@ -228,7 +245,6 @@
                                 would never be destroyed, and the friendship would be preserved. All of this wouldn't have happened without the support of our Patrons.
                                 <p>Thank you!!!</p>
                                 Photo credits: Aleksander Palaev, Nastya Mikhailova
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -281,7 +297,7 @@
         <div class="footer">
             <ul class="footer-nav nav flex-column">
                 <li class="nav-item footer-nav">
-                    <a href="#about" onclick="slowScroll('#about')" class="footer_a"><button type="button" class="btn btn-secondary" >About</button></a>
+                    <button type="button" class="btn btn-secondary" onclick="slowScroll('#about')" >About</button>
                 </li>
                 <li class="nav-item footer-nav">
                     <div class="btn-group dropright">
@@ -295,13 +311,13 @@
                     </div>
                 </li>
                 <li class="nav-item footer-nav">
-                    <a href="#support" onclick="slowScroll('#support')" class="footer_a"><button type="button" class="btn btn-secondary">Support</button></a>
+                    <button type="button" class="btn btn-secondary" onclick="slowScroll('#support')">Support</button>
                 </li>
                 <li class="nav-item footer-nav">
-                    <a href="#team" onclick="slowScroll('#team')" class="footer_a"><button type="button" class="btn btn-secondary" href="#team">Team</button></a>
+                    <button type="button" class="btn btn-secondary" onclick="slowScroll('#team')">Team</button>
                 </li>
                 <li class="nav-item footer-nav">
-                    <a href="#contacts" onclick="slowScroll('#contacts')" class="footer_a"><button type="button" class="btn btn-secondary" href="#contacts">Contacts</button></a>
+                    <button type="button" class="btn btn-secondary" onclick="slowScroll('#contacts')">Contacts</button>
                 </li> 
             </ul>
         <div class="footer_contacts">
@@ -357,14 +373,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
+    <script>
         function slowScroll(id) {
             let offset = 0;
             $('html, body').animate({
                 scrollTop: $(id).offset().top - offset
-                    }, 1000);
+                }, 1000);
                 return false;
             }
+
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(window).scrollTop()>800){
+                        $('#top').fadeIn(900)
+                    }else{
+                        $('#top').fadeOut(700)
+                    }
+                });
+            });
     </script>
 </body>
 </html>
