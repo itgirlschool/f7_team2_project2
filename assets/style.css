@@ -381,6 +381,10 @@ h2 {
         display: flex;
     }
 
+    .elements2 {
+        justify-content: flex-start;
+    }
+
     .elements1,
     .elements2 {
         flex-direction: column;
