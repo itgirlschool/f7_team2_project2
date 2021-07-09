@@ -374,7 +374,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1300px) {
     .elements {
         display: flex;
         flex-wrap: wrap;
