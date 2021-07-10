@@ -800,6 +800,63 @@ footer {
     font-size: 3vw;
     margin: 0 auto;
   }
+  footer {
+    padding: 2vw 0vw 34vw 2vw;
+  }
+  .footer {
+    font-size: 3vw;
+    padding: 0vw 0vw 20vw 0vw;
+  }
+  .footer-sec-1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-nav {
+    display: none;
+  }
+  .footer_contacts {
+    margin: 0 auto;
+    width: 40%;
+  }
+  .footer_props {
+    display: block;
+  }
+  .footer_logo {
+    left: 73%;
+    position: absolute;
+    margin-top: 0vw;
+    margin-left: -41px;
+  }
+  .btn-secondary {
+    font-size: 3vw;
+  }
+  .social_youtube,
+  .social_instagram,
+  .social_facebook {
+    width: 5vw;
+    padding-bottom: 4vw;
+  }
+  .contacts_href {
+    font-size: 2.5vw;
+  }
+  .prop {
+    padding-bottom: 6vw;
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .logo_flogo {
+    width: 15vw;
+    margin: 0vw 0px 0vw 11vw;
+  }
+  .logo_text {
+    font-size: 3vw;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: white;
+  }
 }
 
 @media all and (max-width: 450px) {
