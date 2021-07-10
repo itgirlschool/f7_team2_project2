@@ -130,12 +130,6 @@ body {
     }
 }
 
-/* .sticky {
-position: -webkit-sticky;
-position: sticky;
-top: 0;
-} */
-
 .navbar-light .navbar-toggler {
     color: $colorThree;
 }
@@ -703,6 +697,9 @@ footer {
     }
     .help_btn {
         width: 27vw;
+    .nav-item {
+        font-size: 3vw;
+        margin: 0 auto;
     }
 }
 

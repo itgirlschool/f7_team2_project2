@@ -240,6 +240,8 @@ h3 {
   align-self: center;
   text-align: center;
 
+  text-align: center;
+
 }
 
 .about_believe {
@@ -268,6 +270,12 @@ h3 {
 }
 
 .project {
+  width: 27%;
+}
+
+.project_img {
+  width: 15vw;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,6 +333,8 @@ h3 {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   box-sizing: content-box;
+  border-color: #f3c044;
+
   border-color: #f3c044;
 
 }
@@ -932,6 +942,7 @@ footer {
 @media all and (max-width: 450px) {
   .supporters_interview {
     height: 300px;
+
   }
 
 }
