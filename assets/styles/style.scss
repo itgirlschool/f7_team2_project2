@@ -514,6 +514,9 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+}
+@media screen and (max-width: 1300px){
     .elements {
         display: flex;
         flex-wrap: wrap;
