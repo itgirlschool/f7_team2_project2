@@ -234,7 +234,6 @@ h3 {
   -ms-grid-row-align: center;
   align-self: center;
   text-align: center;
-
 }
 
 .about_believe {
@@ -269,21 +268,6 @@ h3 {
 .project_img {
   width: 15vw;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 40%;
-  margin: 20px;
-  width: 27%;
-}
-
-.project_img {
-  width: 15vw;
-  margin: 0 auto;
-
 }
 
 .roundphoto {
@@ -329,12 +313,7 @@ h3 {
   font-weight: 600;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  box-sizing: content-box;
   border-color: #f3c044;
-
-  box-sizing: content-box;
-  border-color: #f3c044;
-
 }
 
 .help_btn:hover {
@@ -480,18 +459,10 @@ li {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 50vw;
-
 }
 
 .follow-us_right {
@@ -846,45 +817,6 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-}
-
-@media screen and (max-width: 1023px) {
-  .supporters_structure {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .help_btn {
-    width: 27vw;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .elements {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .project {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
 
   .project_img {
     width: 30vw;
@@ -898,121 +830,11 @@ footer {
     font-size: 3vw;
     margin: 0 auto;
   }
-
-  .btn-donate {
-    margin: 0 auto;
-  }
-
-  .donate_flex {
-    padding: 1.5vw 5.5vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 3vw;
-  }
-
-  #top {
-    right: 628px;
-    top: 313px;
-    font-size: 3vw;
-    position: fixed;
-    margin: 0;
-  }
-
-  footer {
-    padding: 2vw 0vw 34vw 2vw;
-  }
-
-  .footer {
-    font-size: 3vw;
-    padding: 0vw 0vw 20vw 0vw;
-  }
-
-  .footer-sec-1 {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .footer-nav {
-    display: none;
-  }
-
-  .footer-nav {
-    display: none;
-  }
-
-  .footer_contacts {
-    margin: 0 auto;
-    width: 40%;
-  }
-
-  .footer_props {
-    display: block;
-  }
-
-  .footer_props {
-    display: block;
-  }
-
-  .footer_logo {
-    left: 73%;
-    position: absolute;
-    margin-top: 0vw;
-    margin-left: -41px;
-  }
-
-  .btn-secondary {
-    font-size: 3vw;
-  }
-
-  .btn-secondary {
-    font-size: 3vw;
-  }
-
-  .social_youtube,
-  .social_instagram,
-  .social_facebook {
-    width: 5vw;
-    padding-bottom: 4vw;
-  }
-
-  .contacts_href {
-    font-size: 2.5vw;
-  }
-
-  .contacts_href {
-    font-size: 2.5vw;
-  }
-
-  .prop {
-    padding-bottom: 6vw;
-    text-align: center;
-    width: 70vw;
-    margin: 0 auto;
-  }
-
-  .logo_flogo {
-    width: 15vw;
-    margin: 0vw 0px 0vw 11vw;
-  }
-
-  .logo_text {
-    font-size: 3vw;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    color: white;
-  }
 }
 
 @media all and (max-width: 450px) {
   .supporters_interview {
     height: 300px;
-
   }
 
   .news_img {
@@ -1020,7 +842,5 @@ footer {
     height: 220px;
   }
 }
-
-
 
 /*# sourceMappingURL=style.css.map */
