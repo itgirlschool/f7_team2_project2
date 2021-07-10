@@ -655,6 +655,9 @@ footer {
     font-size: 2vw;
     margin: 26px;
     padding: 4vw;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
   .supporters_interview {
@@ -797,6 +800,9 @@ footer {
     flex-direction: column;
   }
 
+  .help_btn {
+    width: 27vw;
+  }
 }
 
 @media screen and (max-width: 1300px) {

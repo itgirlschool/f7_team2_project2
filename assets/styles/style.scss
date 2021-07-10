@@ -529,6 +529,9 @@ footer {
         font-size: 2vw;
         margin: 26px;
         padding: 4vw;
+        color: $colorThree;
+        font-weight: 600;
+        text-transform: uppercase;
     }
     .supporters_interview {
         width: 60vw;
@@ -697,6 +700,9 @@ footer {
         font-size: 3vw;
         width: max-content;
         color: white;
+    }
+    .help_btn {
+        width: 27vw;
     }
 }
 
