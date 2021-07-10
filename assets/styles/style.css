@@ -629,6 +629,9 @@ footer {
     font-size: 2vw;
     margin: 26px;
     padding: 4vw;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
   }
   .supporters_interview {
     width: 60vw;
@@ -824,6 +827,9 @@ footer {
     width: -moz-max-content;
     width: max-content;
     color: white;
+  }
+  .help_btn {
+    width: 27vw;
   }
 }
 
