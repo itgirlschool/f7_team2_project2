@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="shortcut icon" href="./assets/images/FE_logo.png" type="image/svg">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/index.css">
@@ -20,7 +21,7 @@
     <div id="wrapper">
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#wrapper" onclick="slowScroll('#wrapper')">
+                <a class="navbar-brand" href="./index.html">
                     <div class="header_logo">
                         <img src="./assets/images/FE_logo.png" alt="Logo" class="logo_img">
                     </div>
@@ -34,25 +35,20 @@
                             <a class="nav-link header-nav-link" href="#about" onclick="slowScroll('#about')">About</a>
                         </li>
                         <li class="nav-item dropdown header-nav-item">
-                            <a class="nav-link dropdown-toggle header-nav-link" data-toggle="dropdown" href="#actions" role="button" aria-haspopup="true" aria-expanded="false">Actions</a>
-                            <div class="dropdown-menu" id="actions">
-                                <a class="dropdown-item" href="#action-1" onclick="slowScroll('#action-1')">Action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#action-2" onclick="slowScroll('#action-2')">Another
-                                    action</a>
-                            </div>
+                            <a class="nav-link header-nav-link" href="#about" onclick="slowScroll('#actions-scroll')">Actions</a>
+                            
                         </li>
                         <li class="nav-item header-nav-item">
                             <a class="nav-link header-nav-link" href="#support" onclick="slowScroll('#support')">Support</a>
                         </li>
                         <li class="nav-item header-nav-item">
-                            <a class="nav-link header-nav-link" href="#team" onclick="slowScroll('#team')">Team</a>
+                            <a class="nav-link header-nav-link" href="./index_team.html">Team</a>
                         </li>
                         <li class="nav-item header-nav-item">
                             <a class="nav-link header-nav-link" href="#contacts" onclick="slowScroll('#contacts')">Contacts</a>
                         </li>
                     </ul>
-                    <div class="btn-donate my-2 my-lg-0">
+                    <div class="header-btn-donate btn-donate my-2 my-lg-0">
                         <a href="https://donorbox.org/floating-eka?default_interval=m" target="_blank" class="btn btn-primary btn-lg btn-header">
                             <div class="donate_flex">
                                 <div class="donate_img">
@@ -88,16 +84,16 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="assets/images/FEsite_banner1.png" class="d-block w-100" alt="photo1">
+                                <img src="./assets/images/FEsite_banner1.png" class="d-block w-100" alt="photo1">
                             </div>
                             <div class="carousel-item ">
-                                <img src="assets/images/FEsite_banner2.png" class="d-block w-100" alt="photo2">
+                                <img src="./assets/images/FEsite_banner2.png" class="d-block w-100" alt="photo2">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/FEsite_banner3.png" class="d-block w-100" alt="photo3">
+                                <img src="./assets/images/FEsite_banner3.png" class="d-block w-100" alt="photo3">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/FEsite_banner4.png" class="d-block w-100" alt="photo4">
+                                <img src="./assets/images/FEsite_banner4.png" class="d-block w-100" alt="photo4">
                             </div>
                         </div>
                         <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
@@ -121,7 +117,7 @@
                         </div>
                         <div class="about_layout">
                             <h3 class="about_believe">We believe that</h3>
-                            <ul>
+                            <ul class="about_list">
                                 <li>✔️Creative practices play a critical role in the development of new ways of being, doing and thinking.</li>
                                 <li>✔️Interdisciplinary approach and cross-border collaborations can make a stronger impact.</li>
                                 <li>✔️Art is social engagement practice for asking questions and looking for answers. It has the force to bring social change and contribute to social cohesion and environmental citizenship.
@@ -138,31 +134,38 @@
 
                 <!-- Actions  -->
 
-                <section class="actions">
+                <section class="actions" id="actions-scroll">
                     <h2>Actions</h2>
                     <div class="elements">
                         <div class="project">
-                            <img src="assets/images/FEsite_кнопка1.png" class="roundphoto" alt="img_actions1">
+                            <div class="project_img">
+                                <img src="./assets/images/FEsite_action_1.png" class="roundphoto" alt="img_actions1">
+                            </div>
+                            
                             <div class="text_activities">
-                                <h4>Live discussions with change-makers</h4>
+                                <h4>Live discussions <br /> with change-makers</h4>
                                 <p> Live Discussions with artists, cultural managers and leaders of cultural and creative projects. The project is aimed to encourage young or developing change makers and artists to make the first steps creating cultural projects
                                     and to support those who are already developing them; discuss up to date challenges and tendencies in the culture sphere today.
                                 </p>
                             </div>
                         </div>
                         <div class="project">
-                            <img src="assets/images/FEsite_кнопка2.png" class="roundphoto" alt="img_actions2">
+                            <div class="project_img">
+                                <img src="./assets/images/FEsite_action_2.png" class="roundphoto" alt="img_actions2">
+                            </div>
                             <div class="text_activities">
-                                <h4>Performances for a Dialogue</h4>
+                                <h4>Performances <br /> for a Dialogue</h4>
                                 <p>Performance as a social engagement practice of asking questions and looking for answers. By conducting performances in city spaces we aimed to engage communities into a dialogue on important and complex social issues using
                                     a language of art.
                                 </p>
                             </div>
                         </div>
                         <div class="project">
-                            <img src="assets/images/FEsite_кнопка2.png" class="roundphoto" alt="img_actions3">
+                            <div class="project_img">
+                                <img src="./assets/images/FEsite_action_2.png" class="roundphoto" alt="img_actions3">
+                            </div>
                             <div class="text_activities">
-                                <h4>Cultural collaborations</h4>
+                                <h4>Cultural <br /> collaborations</h4>
                                 <p>We build collaborations with various non-profits and creative projects around the Baltic Sea to strengthen cultural development, contribute to connecting the region and strengthening the regional identity.
                                 </p>
                             </div>
@@ -201,28 +204,28 @@
                     <h2>What Our Supporters Say</h2>
                     <div class="supporters_structure">
                         <div class="supporters_layout">
-                            <img class="supporters_layout_image" src="assets/images/1_Anna_Arzamasova.png" alt="image">
-                            <h3>Anna Arzamasova</h3>
+                            <img class="supporters_layout_image" src="assets/images/Anna_Arzamasova.png" alt="image">
+                            <h3 class="supporters_name">Anna Arzamasova</h3>
                             <p class="supporters_interview">I'm supporting Floating EKA because I find it important to get involved in cool impact-projects when I can. Mine is very much about numbers and precise wording, that is why I really want to be at least slightly related to something
                                 very creative and crazy in a good way, something brave and beautiful.
                             </p>
                         </div>
                         <div class="supporters_layout">
-                            <img class="supporters_layout_image" src="assets/images/2_Lorenzo_Reverberi.png" alt="image">
-                            <h3>Lorenzo Reverberi</h3>
+                            <img class="supporters_layout_image" src="assets/images/Lorenzo_Reverberi.png" alt="image">
+                            <h3 class="supporters_name">Lorenzo Reverberi</h3>
                             <p class="supporters_interview">My goal is to help create the best environment possible for storytellers to share their stories, for artists to showcase their talents, for communities to connect and be happy together. Floating EKA combines all of the above
                                 with ideals of environmental sustainability, co-creation, and playfulness and fun.
                             </p>
                         </div>
                         <div class="supporters_layout">
-                            <img class="supporters_layout_image" src="assets/images/3_Stanislav_Vitko.png" alt="image">
-                            <h3>Stanislav Vitko </h3>
+                            <img class="supporters_layout_image" src="assets/images/Stanislav_Vitko.png" alt="image">
+                            <h3 class="supporters_name">Stanislav Vitko </h3>
                             <p class="supporters_interview">I like ambitious projects; working on such projects is the most exciting part of life. Even though I know almost nothing about Arts, I can feel the Floating EKA team's passion, and I'm sure this project will bring a lot of
                                 joy and fun for everyone involved.</p>
                         </div>
                         <div class="supporters_layout">
-                            <img class="supporters_layout_image" src="assets/images/4_Olivia_Capozzalo.png" alt="image">
-                            <h3>Olivia Capozzalo</h3>
+                            <img class="supporters_layout_image" src="assets/images/Olivia_Capozzalo.png" alt="image">
+                            <h3 class="supporters_name">Olivia Capozzalo</h3>
                             <p class="supporters_interview">I got to watch Floating Eka grow from the inside — from being a dream, a bunch of ideas, excited conversations to a full-fledged organization, realizing its mission. Watching that process and all the passion and hard work it
                                 took and continues to take is a big part of why I support the project.
                             </p>
@@ -328,22 +331,13 @@
                         <button type="button" class="btn btn-secondary" onclick="slowScroll('#about')">About</button>
                     </li>
                     <li class="nav-item footer-nav">
-                        <div class="btn-group dropright">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Actions
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#action-1" onclick="slowScroll('#action-1')">Action</a>
-                                <a class="dropdown-item" href="#action-2" onclick="slowScroll('#action-2')">Another
-                                    action</a>
-                            </div>
-                        </div>
+                            <button type="button" class="btn btn-secondary" onclick="slowScroll('#actions-scroll')">Actions</button>
                     </li>
                     <li class="nav-item footer-nav">
                         <button type="button" class="btn btn-secondary" onclick="slowScroll('#support')">Support</button>
                     </li>
                     <li class="nav-item footer-nav">
-                        <button type="button" class="btn btn-secondary" onclick="slowScroll('#team')">Team</button>
+                        <a class="btn btn-secondary" href="./index_team.html">Team</a>
                     </li>
                     <li class="nav-item footer-nav">
                         <button type="button" class="btn btn-secondary" onclick="slowScroll('#contacts')">Contacts</button>
@@ -372,13 +366,13 @@
             </div>
 
             <div class="footer_props">
-                <div class="props">
-                    ASSOCIATION DATA: <br /> KRS: 0000860488 <br /> REGION: 387594229 <br /> NIP: 7831827651 <br /> Registered: 27.11.2020 <br /> Address: ul. Karola Libelta 1a/2 61-706 Poznań, Poland
+                <div class="prop">
+                    ASSOCIATION DATA: <br /> KRS: 0000860488 <br /> REGION: 387594229 <br /> NIP: 7831827651 <br /> Registered: 27.11.2020 <br /> Address: ul. Karola Libelta 1a/2 <br />  61-706 Poznań, Poland
                 </div>
-                <div class="props">
+                <div class="prop">
                     PAYMENT IN PLN: <br /> IBAN: PL71 2530 0008 2022 1069 2441 0001 (PLN) <br /> SWIFT: NESBPLPW <br /> PAYMENT IN EUR: <br /> IBAN: PL98 1870 1045 2078 1069 2441 0001
                 </div>
-                <div class="props">
+                <div class="prop">
                     BANK ACCOUNT: <br /> Nest Bank SA <br /> Address: ul. Wołoska 24, 02-675 Warszawa
                 </div>
             </div>
