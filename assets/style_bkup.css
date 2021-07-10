@@ -182,8 +182,9 @@ body {
     margin: 35px;
     border-radius: 10px;
     border: 1px solid gray;
-    width: 25vw;
+    min-width: 25vw;
     height: 15vh;
+    box-sizing: content-box;
 }
 
 .help_btn:hover {
@@ -335,12 +336,10 @@ form {
         flex-direction: column;
         align-items: center;
     }
-
     .follow-us_left {
         display: flex;
         justify-content: flex-end;
     }
-
     .follow-us_right {
         display: flex;
         justify-content: center;
@@ -373,20 +372,17 @@ h2 {
     margin: 20px;
 }
 
-
 @media screen and (max-width: 1023px) {
     .elements {
         display: flex;
         flex-wrap: wrap;
     }
-
     .project {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
 }
 
 @media screen and (max-width: 639px) {
@@ -394,7 +390,6 @@ h2 {
         display: flex;
         flex-direction: column
     }
-
     .project {
         flex-direction: column;
     }
@@ -525,14 +520,12 @@ footer {
         align-items: center;
         font-size: 1.5vw;
     }
-
     #top {
         right: 7vw;
         top: 1vw;
         position: fixed;
         margin: 0;
     }
-
     .footer {
         display: block;
         max-width: 990px;
@@ -540,33 +533,27 @@ footer {
         padding: 2vw 0vw 21vw 2vw;
         font-size: 1.5vw;
     }
-
     .footer-sec-1 {
         justify-content: center;
     }
-
     .btn-secondary {
         font-size: 1.5vw;
     }
-
     .footer_props {
         justify-content: center;
         margin: 0 auto;
         padding-top: 8vw;
         width: 70vw;
     }
-
     .footer_logo {
         left: 75%;
         position: absolute;
         margin-top: 0vw;
         margin-left: -36px;
     }
-
     .logo_text {
         font-size: 1.5vw;
     }
-
     .logo_flogo {
         width: 7vw;
         margin: -3vw -3px 1vw 6vw;
@@ -580,7 +567,6 @@ footer {
         align-items: center;
         font-size: 3vw;
     }
-
     #top {
         right: 628px;
         top: 313px;
@@ -588,65 +574,53 @@ footer {
         position: fixed;
         margin: 0;
     }
-
     footer {
         padding: 2vw 0vw 34vw 2vw;
     }
-
     .footer {
         font-size: 3vw;
     }
-
     .footer-sec-1 {
         display: block;
         margin: 0 auto;
         text-align: center;
     }
-
     .footer-nav {
         margin: 0 auto;
         padding-bottom: 3vw;
     }
-
     .btn-secondary {
         font-size: 3vw;
     }
-
     .footer_contacts {
         margin: 0 auto;
         text-align: center;
         width: max-content;
     }
-
     .social_youtube,
     .social_instagram,
     .social_facebook {
         width: 5vw;
         padding-bottom: 4vw;
     }
-
     .footer_props {
         display: block;
         width: max-content;
     }
-
     .props {
         padding-bottom: 6vw;
         text-align: center;
     }
-
     .footer_logo {
         left: 73%;
         position: absolute;
         margin-top: 0vw;
         margin-left: -41px;
     }
-
     .logo_flogo {
         width: 15vw;
         margin: 0vw 0px 0vw 11vw;
     }
-
     .logo_text {
         font-size: 3vw;
         width: max-content;
