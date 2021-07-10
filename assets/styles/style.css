@@ -939,9 +939,17 @@ footer {
     display: none;
   }
 
+  .footer-nav {
+    display: none;
+  }
+
   .footer_contacts {
     margin: 0 auto;
     width: 40%;
+  }
+
+  .footer_props {
+    display: block;
   }
 
   .footer_props {
@@ -959,11 +967,19 @@ footer {
     font-size: 3vw;
   }
 
+  .btn-secondary {
+    font-size: 3vw;
+  }
+
   .social_youtube,
   .social_instagram,
   .social_facebook {
     width: 5vw;
     padding-bottom: 4vw;
+  }
+
+  .contacts_href {
+    font-size: 2.5vw;
   }
 
   .contacts_href {
@@ -989,7 +1005,6 @@ footer {
     width: max-content;
     color: white;
   }
-
 
 }
 
