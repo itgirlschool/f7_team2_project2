@@ -182,8 +182,9 @@ body {
     margin: 35px;
     border-radius: 10px;
     border: 1px solid gray;
-    width: 25vw;
+    min-width: 25vw;
     height: 15vh;
+    box-sizing: content-box;
 }
 
 .help_btn:hover {

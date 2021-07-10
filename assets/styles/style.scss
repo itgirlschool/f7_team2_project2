@@ -201,8 +201,7 @@ h3 {
     @extend%space;
 }
 
-h4,
-h5 {
+h4 {
     @extend%space;
 }
 
@@ -218,9 +217,31 @@ h5 {
     &_believe {
         text-align: center;
     }
-    &_say {
-        text-align: center;
-    }
+}
+
+
+/*actions*/
+
+.text_activities {
+    width: 90%;
+}
+
+.elements {
+    display: flex;
+    margin: 20px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 20px;
+}
+
+.roundphoto {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -243,13 +264,37 @@ h5 {
         margin: 35px;
         border-radius: 10px;
         border: 1px solid $colorOne;
-        width: 25vw;
+        min-width: 25vw;
         height: 15vh;
         background-color: $colorTwo;
         color: $colorOne;
+        box-sizing: content-box;
     }
     &_btn:hover {
         cursor: pointer;
+    }
+}
+
+
+/*supporters*/
+
+.supporters {
+    &_structure {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10vh;
+    }
+    &_layout {
+        display: flex;
+        flex-flow: column wrap;
+        margin: auto;
+        align-content: center;
+        margin: 30px;
+        &_image {
+            align-self: center;
+            width: 200px;
+            border-radius: 50%;
+        }
     }
 }
 
@@ -277,27 +322,7 @@ li {
 }
 
 
-/*supporters*/
-
-.supporters {
-    &_structure {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 10vh;
-    }
-    &_layout {
-        display: flex;
-        flex-flow: column wrap;
-        margin: 0 auto;
-        align-content: center;
-        margin: 30px;
-        &_image {
-            align-self: center;
-            width: 200px;
-            border-radius: 50%;
-        }
-    }
-}
+/*followUs*/
 
 .follow-us {
     &_structure {
@@ -344,31 +369,6 @@ form {
 
 #mc_embed_signup form {
     display: contents;
-}
-
-
-/*actions*/
-
-.text_activities {
-    width: 90%;
-}
-
-.elements {
-    display: flex;
-    margin: 20px;
-}
-
-.project {
-    display: flex;
-    justify-content: center;
-    width: 40%;
-    margin: 20px;
-}
-
-.roundphoto {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
 }
 
 
@@ -484,10 +484,9 @@ footer {
 
 /*media actions*/
 
-@media all and (max-width: 1023px) {
-    .supporters_structure {
-        display: flex;
-        flex-direction: column;
+@media all and (max-width: 450px) {
+    .supporters_interview {
+        height: 300px;
     }
 }
 
@@ -505,9 +504,20 @@ footer {
         display: flex;
         justify-content: center;
     }
+    .elements {
+        display: flex;
+        flex-direction: column
+    }
+    .project {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 1023px) {
+    .supporters_structure {
+        display: flex;
+        flex-direction: column;
+    }
     .elements {
         display: flex;
         flex-wrap: wrap;
@@ -517,15 +527,5 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-}
-
-@media screen and (max-width: 639px) {
-    .elements {
-        display: flex;
-        flex-direction: column
-    }
-    .project {
-        flex-direction: column;
     }
 }
