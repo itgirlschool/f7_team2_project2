@@ -628,6 +628,9 @@ footer {
     flex-direction: column;
   }
 
+}
+
+@media screen and (max-width: 1300px) {
   .elements {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -648,6 +651,7 @@ footer {
     -ms-flex-align: center;
     align-items: center;
   }
+
 }
 
 /*# sourceMappingURL=style.css.map */
