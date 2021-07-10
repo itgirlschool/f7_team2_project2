@@ -655,6 +655,7 @@ footer {
 
   .project_img {
     margin: 5vw;
+    width: 20vw;
   }
 
   .help_btn {
@@ -832,6 +833,10 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .project_img {
+    width: 30vw;
   }
 
   .header_logo {
