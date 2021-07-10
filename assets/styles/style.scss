@@ -397,7 +397,7 @@
     }
     
     #mc_embed_signup {
-        background: #fff;
+        background: $colorThree;
         clear: left;
         font: 14px Helvetica, Arial, sans-serif;
     }
@@ -439,7 +439,7 @@
     .btn {
         &-secondary {
             background-color: rgba(0, 0, 0, 0);
-            color: #004d89;
+            color: $colorOne;
             border: none;
             margin-bottom: 1vw;
             font-size: 1vw;
