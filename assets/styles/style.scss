@@ -280,9 +280,11 @@ h4 {
         min-width: 25vw;
         height: 15vh;
         background-color: $colorTwo;
-        color: $colorOne;
+        color: $colorThree;
+        text-transform: uppercase;
         box-sizing: content-box;
         border-color: $colorTwo;
+        width: 30vw;
     }
     &_btn:hover {
         cursor: pointer;
@@ -514,6 +516,7 @@ footer {
     .elements {
         display: flex;
         flex-wrap: wrap;
+        padding: 0;
     }
     .project {
         width: 100%;
@@ -633,8 +636,8 @@ footer {
         font-size: 3vw;
     }
     #top {
-        right: 628px;
-        top: 313px;
+        right: 515px;
+        top: 240px;
         font-size: 3vw;
         position: fixed;
         margin: 0;
