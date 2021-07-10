@@ -621,6 +621,7 @@ footer {
   }
   .project_img {
     margin: 5vw;
+    width: 20vw;
   }
   .help_btn {
     width: 27vw;
@@ -741,6 +742,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .project_img {
+    width: 30vw;
   }
   .header_logo {
     width: 14vw;

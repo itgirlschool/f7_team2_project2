@@ -521,6 +521,7 @@ footer {
         align-items: center;
         &_img {
             margin: 5vw;
+            width: 20vw;
         }
     }
     .help_btn {
@@ -614,6 +615,9 @@ footer {
     }
     .project {
         flex-direction: column;
+        &_img {
+            width: 30vw;
+        }
     }
     .header_logo {
         width: 14vw;
