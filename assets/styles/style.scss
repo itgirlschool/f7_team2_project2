@@ -224,6 +224,8 @@ h4 {
 
 /*actions*/
 
+
+
 .text_activities {
     text-align: center;
     margin-right: 0;
@@ -274,7 +276,10 @@ h4 {
         min-width: 25vw;
         height: 15vh;
         background-color: $colorTwo;
-        color: $colorOne;
+        color: $colorThree;
+        width: 30vw;
+        text-transform: uppercase;
+        font-weight: 600;
         box-sizing: content-box;
         border-color: $colorTwo;
     }
