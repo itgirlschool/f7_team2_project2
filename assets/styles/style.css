@@ -6,7 +6,7 @@
 .actions,
 .container_news,
 .container_help {
-  margin: 15vh;
+  padding-top: 4vh;
 }
 
 h2,
@@ -122,6 +122,10 @@ body {
   background-color: rgba(243, 192, 68, 0);
 }
 
+.btn {
+  border: none;
+}
+
 .btn-donate {
   width: 14vw;
 }
@@ -139,6 +143,9 @@ body {
 .btn-primary:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+  background-color: #FFED00;
+  border-color: #FFED00;
+  color: #004d89;
 }
 
 /* .sticky {
@@ -151,7 +158,7 @@ top: 0;
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url(./images/menu-hamburger.svg);
+  background-image: url(../images/menu-hamburger.svg);
   opacity: 0.9;
 }
 
@@ -160,7 +167,6 @@ top: 0;
   position: fixed;
   right: 1.25vw;
   top: 1.9vw;
-  /* background: #004D89; */
   color: #f3c044;
   text-align: center;
   text-transform: uppercase;
@@ -208,6 +214,11 @@ h3 {
   text-align: center;
 }
 
+.about {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
 .about_structure {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,28 +234,41 @@ h3 {
 
 .about_layout {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
+  <<<<<<< HEAD -ms-grid-row-align: center;
   align-self: center;
+  =======-ms-grid-row-align: center;
+  align-self: center;
+  text-align: center;
+  >>>>>>>72799ffa08b82e04cf2524ede1050b2ae0cf2e2b
 }
 
 .about_believe {
   text-align: center;
 }
 
+.about_list {
+  text-align: left;
+}
+
 /*actions*/
 .text_activities {
-  width: 90%;
+  text-align: center;
+  margin-right: 0;
+  width: 25vw;
 }
 
 .elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 3vw;
 }
 
 .project {
-  display: -webkit-box;
+  <<<<<<< HEAD display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -252,12 +276,17 @@ h3 {
   justify-content: center;
   width: 40%;
   margin: 20px;
+  =======width: 27%;
+}
+
+.project_img {
+  width: 15vw;
+  margin: 0 auto;
+  >>>>>>>72799ffa08b82e04cf2524ede1050b2ae0cf2e2b
 }
 
 .roundphoto {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 100%;
 }
 
 /* help*/
@@ -285,7 +314,9 @@ h3 {
 }
 
 .help_btn {
+  font-size: 1.2vw;
   margin: 35px;
+  padding: 3vw;
   border-radius: 10px;
   border: 1px solid #004d89;
   min-width: 25vw;
@@ -293,11 +324,17 @@ h3 {
   background-color: #f3c044;
   color: #004d89;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+  <<<<<<< HEAD box-sizing: content-box;
+  =======box-sizing: content-box;
+  border-color: #f3c044;
+  >>>>>>>72799ffa08b82e04cf2524ede1050b2ae0cf2e2b
 }
 
 .help_btn:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  border: 3px solid #f3c044;
 }
 
 /*supporters*/
@@ -331,6 +368,15 @@ h3 {
   align-self: center;
   width: 200px;
   border-radius: 50%;
+  margin-bottom: 2vw;
+}
+
+.supporters_name {
+  margin-bottom: 1vw;
+}
+
+.supporters_interview {
+  text-align: center;
 }
 
 /*news*/
@@ -383,7 +429,8 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px;
+  margin-left: 5vw;
+  padding-right: 3vw;
 }
 
 .follow-us_left {
@@ -392,15 +439,22 @@ li {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
+  <<<<<<< HEAD -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  =======-ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 50vw;
+  >>>>>>>72799ffa08b82e04cf2524ede1050b2ae0cf2e2b
 }
 
 .follow-us_right {
-  width: 900px;
+  width: 54vw;
 }
 
 .follow-us_img {
@@ -439,7 +493,7 @@ form {
 /* Стили для footer */
 footer {
   font-size: 1vw;
-  background-image: url(./images/wave.png);
+  background-image: url(../images/bg_footer.png);
   background-size: cover;
   background-position: right bottom;
   padding: 2vw 0vw 7vw 2vw;
@@ -459,7 +513,7 @@ footer {
 }
 
 .footer_b {
-  width: 35px;
+  width: 100%;
 }
 
 .footer_b:hover {
@@ -527,10 +581,15 @@ footer {
 }
 
 .footer_props {
-  width: 50vw;
+  width: 48vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.prop {
+  padding: 0 10px;
+  width: 14vw;
 }
 
 .footer_logo {
@@ -538,12 +597,6 @@ footer {
   position: absolute;
   margin-top: 10vw;
   margin-left: -33px;
-}
-
-.props_association,
-.props_payment,
-.props_account {
-  padding-right: 2vw;
 }
 
 .logo_flogo {
@@ -561,9 +614,125 @@ footer {
 }
 
 /*media actions*/
-@media all and (max-width: 450px) {
+@media screen and (max-width: 990px) {
+  .supporters_structure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .project_img {
+    margin: 5vw;
+  }
+
+  .help_btn {
+    width: 27vw;
+    font-size: 2vw;
+    margin: 26px;
+    padding: 4vw;
+  }
+
   .supporters_interview {
-    height: 300px;
+    width: 60vw;
+  }
+
+  .header_logo {
+    width: 8vw;
+  }
+
+  .nav-item {
+    font-size: 2vw;
+    margin: 0 auto;
+  }
+
+  .btn-donate {
+    margin: 0 auto;
+  }
+
+  .donate_flex {
+    padding: 0.5vw 2.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.5vw;
+  }
+
+  #top {
+    right: 7vw;
+    top: 1vw;
+    position: fixed;
+    margin: 0;
+  }
+
+  .footer {
+    display: block;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 2vw 0vw 21vw 2vw;
+    font-size: 1.5vw;
+  }
+
+  .footer-sec-1 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .btn-secondary {
+    font-size: 1.5vw;
+  }
+
+  .footer_props {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 8vw;
+    width: 70vw;
+  }
+
+  .footer_logo {
+    left: 75%;
+    position: absolute;
+    margin-top: 0vw;
+    margin-left: -36px;
+  }
+
+  .logo_text {
+    font-size: 1.5vw;
+  }
+
+  .logo_flogo {
+    width: 7vw;
+    margin: -3vw -3px 1vw 6vw;
   }
 }
 
@@ -650,8 +819,115 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    .header_logo {
+      width: 14vw;
+    }
+
+    .nav-item {
+      font-size: 3vw;
+      margin: 0 auto;
+    }
+
+    .btn-donate {
+      margin: 0 auto;
+    }
+
+    .donate_flex {
+      padding: 1.5vw 5.5vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 3vw;
+    }
+
+    #top {
+      right: 628px;
+      top: 313px;
+      font-size: 3vw;
+      position: fixed;
+      margin: 0;
+    }
+
+    footer {
+      padding: 2vw 0vw 34vw 2vw;
+    }
+
+    .footer {
+      font-size: 3vw;
+      padding: 0vw 0vw 20vw 0vw;
+    }
+
+    .footer-sec-1 {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-nav {
+      display: none;
+    }
+
+    .footer_contacts {
+      margin: 0 auto;
+      width: 40%;
+    }
+
+    .footer_props {
+      display: block;
+    }
+
+    .footer_logo {
+      left: 73%;
+      position: absolute;
+      margin-top: 0vw;
+      margin-left: -41px;
+    }
+
+    .btn-secondary {
+      font-size: 3vw;
+    }
+
+    .social_youtube,
+    .social_instagram,
+    .social_facebook {
+      width: 5vw;
+      padding-bottom: 4vw;
+    }
+
+    .contacts_href {
+      font-size: 2.5vw;
+    }
+
+    .prop {
+      padding-bottom: 6vw;
+      text-align: center;
+      width: 70vw;
+      margin: 0 auto;
+    }
+
+    .logo_flogo {
+      width: 15vw;
+      margin: 0vw 0px 0vw 11vw;
+    }
+
+    .logo_text {
+      font-size: 3vw;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      color: white;
+    }
   }
 
-}
+  @media all and (max-width: 450px) {
+    .supporters_interview {
+      height: 300px;
+    }
 
-/*# sourceMappingURL=style.css.map */
+  }
+
+  /*# sourceMappingURL=style.css.map */

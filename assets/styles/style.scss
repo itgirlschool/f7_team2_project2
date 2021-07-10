@@ -2,7 +2,7 @@ $colorOne: #004d89;
 $colorTwo: #f3c044;
 $colorThree: white;
 %topSpace {
-    margin: 15vh;
+    padding-top: 4vh;
 }
 
 %space {
@@ -107,6 +107,7 @@ body {
 }
 
 .btn {
+    border: none;
     &-donate {
         width: 14vw;
     }
@@ -123,9 +124,11 @@ body {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         transform: scale(1.05);
+        background-color: #FFED00;
+        border-color: #FFED00;
+        color: $colorOne;
     }
 }
-
 
 /* .sticky {
 position: -webkit-sticky;
@@ -138,7 +141,7 @@ top: 0;
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url(./images/menu-hamburger.svg);
+    background-image: url(../images/menu-hamburger.svg);
     opacity: 0.9;
 }
 
@@ -147,7 +150,6 @@ top: 0;
     position: fixed;
     right: 1.25vw;
     top: 1.9vw;
-    /* background: #004D89; */
     color: $colorTwo;
     text-align: center;
     text-transform: uppercase;
@@ -206,6 +208,8 @@ h4 {
 }
 
 .about {
+    margin: 0 auto;
+    max-width: 60%;
     &_structure {
         display: flex;
         flex-direction: column;
@@ -213,9 +217,13 @@ h4 {
     }
     &_layout {
         align-self: center;
+        text-align: center;
     }
     &_believe {
         text-align: center;
+    }
+    &_list {
+        text-align: left;
     }
 }
 
@@ -223,25 +231,28 @@ h4 {
 /*actions*/
 
 .text_activities {
-    width: 90%;
+    text-align: center;
+    margin-right: 0;
+    width: 25vw;
 }
 
 .elements {
     display: flex;
-    margin: 20px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 3vw;
 }
 
 .project {
-    display: flex;
-    justify-content: center;
-    width: 40%;
-    margin: 20px;
+    width: 27%;
+    &_img {
+        width: 15vw;
+        margin: 0 auto;
+    }
 }
 
 .roundphoto {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 
@@ -261,7 +272,9 @@ h4 {
 
 .help {
     &_btn {
+        font-size: 1.2vw;
         margin: 35px;
+        padding: 3vw;
         border-radius: 10px;
         border: 1px solid $colorOne;
         min-width: 25vw;
@@ -269,9 +282,14 @@ h4 {
         background-color: $colorTwo;
         color: $colorOne;
         box-sizing: content-box;
+        border-color: $colorTwo;
     }
     &_btn:hover {
         cursor: pointer;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        border: 3px solid $colorTwo;
     }
 }
 
@@ -294,7 +312,14 @@ h4 {
             align-self: center;
             width: 200px;
             border-radius: 50%;
+            margin-bottom: 2vw;
         }
+    }
+    &_name {
+        margin-bottom: 1vw;
+    }
+    &_interview {
+        text-align: center;
     }
 }
 
@@ -333,15 +358,17 @@ li {
     }
     &_layout {
         display: flex;
-        margin: 30px;
+        margin-left: 5vw;
+        padding-right: 3vw;
     }
     &_left {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-end;
+        width: 50vw;
     }
     &_right {
-        width: 900px;
+        width: 54vw;
     }
     &_img {
         width: 50px;
@@ -376,7 +403,7 @@ form {
 
 footer {
     font-size: 1vw;
-    background-image: url(./images/wave.png);
+    background-image: url(../images/bg_footer.png);
     background-size: cover;
     background-position: right bottom;
     padding: 2vw 0vw 7vw 2vw;
@@ -388,7 +415,7 @@ footer {
     height: max-content;
     padding: 0 3vw;
     &_b {
-        width: 35px;
+        width: 100%;
         &:hover {
             cursor: pointer;
             transform: scale(1.4);
@@ -445,8 +472,13 @@ footer {
 }
 
 .footer_props {
-    width: 50vw;
+    width: 48vw;
     display: flex;
+}
+
+.prop {
+    padding: 0 10px;
+    width: 14vw;
 }
 
 .footer_logo {
@@ -454,12 +486,6 @@ footer {
     position: absolute;
     margin-top: 10vw;
     margin-left: -33px;
-}
-
-.props_association,
-.props_payment,
-.props_account {
-    padding-right: 2vw;
 }
 
 .logo {
@@ -480,9 +506,89 @@ footer {
 
 /*media actions*/
 
-@media all and (max-width: 450px) {
+@media screen and (max-width: 990px) {
+    .supporters_structure {
+        display: flex;
+        flex-direction: column;
+    }
+    .elements {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_img {
+            margin: 5vw;
+        }
+    }
+    .help_btn {
+        width: 27vw;
+        font-size: 2vw;
+        margin: 26px;
+        padding: 4vw;
+    }
     .supporters_interview {
-        height: 300px;
+        width: 60vw;
+    }
+    .header_logo {
+        width: 8vw;
+    }
+    .nav-item {
+        font-size: 2vw;
+        margin: 0 auto;
+    }
+    .btn-donate {
+        margin: 0 auto;
+    }
+    .donate_flex {
+        padding: 0.5vw 2.5vw;
+        display: flex;
+        align-items: center;
+        font-size: 1.5vw;
+    }
+    #top {
+        right: 7vw;
+        top: 1vw;
+        position: fixed;
+        margin: 0;
+    }
+    .footer {
+        display: block;
+        max-width: 990px;
+        margin: 0 auto;
+        padding: 2vw 0vw 21vw 2vw;
+        font-size: 1.5vw;
+    }
+    .footer-sec-1 {
+        justify-content: center;
+    }
+    .btn-secondary {
+        font-size: 1.5vw;
+    }
+    .footer {
+        &_props {
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 8vw;
+        width: 70vw;
+        }
+        &_logo {
+            left: 75%;
+            position: absolute;
+            margin-top: 0vw;
+            margin-left: -36px;
+        }
+    }
+    
+    .logo_text {
+        font-size: 1.5vw;
+    }
+    .logo_flogo {
+        width: 7vw;
+        margin: -3vw -3px 1vw 6vw;
     }
 }
 
@@ -507,12 +613,8 @@ footer {
     .project {
         flex-direction: column;
     }
-}
-
-@media screen and (max-width: 1023px) {
-    .supporters_structure {
-        display: flex;
-        flex-direction: column;
+    .header_logo {
+        width: 14vw;
     }
 
 }
@@ -520,11 +622,86 @@ footer {
     .elements {
         display: flex;
         flex-wrap: wrap;
+    .nav-item {
+        font-size: 3vw;
+        margin: 0 auto;
     }
-    .project {
-        width: 100%;
+    .btn-donate {
+        margin: 0 auto;
+    }
+    .donate_flex {
+        padding: 1.5vw 5.5vw;
         display: flex;
-        justify-content: center;
         align-items: center;
+        font-size: 3vw;
+    }
+    #top {
+        right: 628px;
+        top: 313px;
+        font-size: 3vw;
+        position: fixed;
+        margin: 0;
+    }
+    footer {
+        padding: 2vw 0vw 34vw 2vw;
+    }
+    .footer {
+        font-size: 3vw;
+        padding: 0vw 0vw 20vw 0vw;
+        &-sec-1 {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &-nav {
+            display: none;
+        }
+        &_contacts {
+            margin: 0 auto;
+            width: 40%;
+        }
+        &_props {
+            display: block;
+        }
+        &_logo {
+            left: 73%;
+            position: absolute;
+            margin-top: 0vw;
+            margin-left: -41px;
+        }
+    }
+    .btn-secondary {
+        font-size: 3vw;
+    }
+    .social_youtube,
+    .social_instagram,
+    .social_facebook {
+        width: 5vw;
+        padding-bottom: 4vw;
+    }
+    .contacts_href {
+        font-size: 2.5vw;
+    }
+    .prop {
+        padding-bottom: 6vw;
+        text-align: center;
+        width: 70vw;
+        margin: 0 auto;
+
+    }
+    .logo_flogo {
+        width: 15vw;
+        margin: 0vw 0px 0vw 11vw;
+    }
+    .logo_text {
+        font-size: 3vw;
+        width: max-content;
+        color: white;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .supporters_interview {
+        height: 300px;
     }
 }
