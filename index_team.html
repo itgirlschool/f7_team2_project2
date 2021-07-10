@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="wrapper">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="./index.html">
                 <div class="header_logo">
@@ -180,6 +180,25 @@
     </footer>
 
 
+    <script>
+        function slowScroll(id) {
+            let offset = 0;
+            $('html, body').animate({
+                scrollTop: $(id).offset().top - offset
+            }, 1000);
+            return false;
+        }
+
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 800) {
+                    $('#top').fadeIn(900)
+                } else {
+                    $('#top').fadeOut(700)
+                }
+            });
+        });
+    </script>
 
 </body>
 
