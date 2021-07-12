@@ -192,6 +192,85 @@
         text-align: center;
         @extend%space;
     }
+    &_list {
+        text-align: left;
+    }
+
+
+
+/*actions*/
+
+.text_activities {
+    text-align: center;
+    margin-right: 0;
+    width: 25vw;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 3vw;
+}
+
+.project {
+    width: 27%;
+    &_img {
+        width: 15vw;
+        margin: 0 auto;
+    }
+}
+
+.roundphoto {
+    width: 100%;
+}
+
+
+/* help*/
+
+.container_help {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.help {
+    &_btn {
+        font-size: 1.2vw;
+        margin: 35px;
+        padding: 3vw;
+        border-radius: 10px;
+        border: 1px solid $colorOne;
+        min-width: 25vw;
+        height: 15vh;
+        background-color: $colorTwo;
+        color: $colorOne;
+        box-sizing: content-box;
+        border-color: $colorTwo;
+    }
+    &_btn:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        border: 3px solid $colorTwo;
+    }
+}
+
+
+/*supporters*/
+
+.supporters {
+    &_structure {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10vh;
     
     h4 {
         @extend%space;
