@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="shortcut icon" href="./assets/images/FE_logo.png" type="image/svg">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/style_team.css">
     <link rel="stylesheet" href="./assets/styles/index.css">
@@ -18,33 +18,34 @@
 </head>
 
 <body>
-    <header class="header" id="wrapper">
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="./index.html">
                 <div class="header_logo">
                     <img src="./assets/images/FE_logo.png" alt="Logo" class="logo_img">
                 </div>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item header-nav-item">
-                        <a class="nav-link header-nav-link" href="./index.html" onclick="slowScroll('#about')">About</a>
+                        <a class="nav-link header-nav-link" href="./index.html#about">About</a>
                     </li>
                     <li class="nav-item dropdown header-nav-item">
-                        <a class="nav-link header-nav-link" href="./index.html" onclick="slowScroll('#actions-scroll')">Actions</a>
+                        <a class="nav-link header-nav-link" href="./index.html#actions-scroll">Actions</a>
                         
                     </li>
                     <li class="nav-item header-nav-item">
-                        <a class="nav-link header-nav-link" href="./index.html" onclick="slowScroll('#support')">Support</a>
+                        <a class="nav-link header-nav-link" href="./index.html#support">Support</a>
                     </li>
                     <li class="nav-item header-nav-item">
                         <a class="nav-link header-nav-link" href="./index_team.html">Team</a>
                     </li>
                     <li class="nav-item header-nav-item">
-                        <a class="nav-link header-nav-link" href="./index.html" onclick="slowScroll('#contacts')">Contacts</a>
+                        <a class="nav-link header-nav-link" href="./index.html#contacts">Contacts</a>
                     </li>
                 </ul>
                 <div class="header-btn-donate btn-donate my-2 my-lg-0">
@@ -178,6 +179,13 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
 
     <script>

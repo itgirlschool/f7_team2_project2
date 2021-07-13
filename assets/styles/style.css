@@ -17,18 +17,14 @@ html {
   height: 100%;
   margin: 0 auto;
   padding: 0;
+  max-width: 1800px;
 }
 
 body {
   margin: 0 auto;
   padding: 0;
   height: 100%;
-}
-
-#wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
+  max-width: 1800px;
 }
 
 #content {
@@ -205,97 +201,6 @@ body {
 h2,
 h3 {
   text-align: center;
-}
-
-.about_list {
-  text-align: left;
-}
-
-/*actions*/
-.text_activities {
-  text-align: center;
-  margin-right: 0;
-  width: 25vw;
-}
-
-.elements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 auto;
-  padding-top: 3vw;
-}
-
-.project {
-  width: 27%;
-}
-
-.project_img {
-  width: 15vw;
-  margin: 0 auto;
-}
-
-.roundphoto {
-  width: 100%;
-}
-
-/* help*/
-.container_help {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.help_btn {
-  font-size: 1.2vw;
-  margin: 35px;
-  padding: 3vw;
-  border-radius: 10px;
-  border: 1px solid #004d89;
-  min-width: 25vw;
-  height: 15vh;
-  background-color: #f3c044;
-  color: #004d89;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  border-color: #f3c044;
-}
-
-.help_btn:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  border: 3px solid #f3c044;
-}
-
-/*supporters*/
-.supporters_structure {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 10vh;
 }
 
 .about {
@@ -744,7 +649,7 @@ footer {
   }
   .project_img {
     margin: 5vw;
-    width: 15vw;
+    width: 22vw;
   }
   .help_btn {
     width: 27vw;
@@ -767,6 +672,10 @@ footer {
   }
   .btn-donate {
     margin: 0 auto;
+    min-width: 54vw;
+  }
+  .btn-header {
+    padding: 2vw 20vw;
   }
   .donate_flex {
     padding: 0.5vw 2.5vw;
@@ -776,13 +685,17 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   #top {
     right: 7vw;
     top: 1vw;
     position: fixed;
     margin: 0;
+    min-width: 14vw;
+  }
+  #top_btn {
+    padding: 1vw;
   }
   .footer {
     display: block;
@@ -838,6 +751,19 @@ footer {
 }
 
 @media all and (max-width: 639px) {
+  .header_logo {
+    width: 14vw;
+  }
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .help_btn {
+    padding: 5vw 31vw;
+    font-size: 2.4vw;
+  }
   .follow-us_structure {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -866,6 +792,23 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .text_activities {
+    width: 80vw;
+  }
+  .btn-donate {
+    min-width: 62vw;
+  }
+  #top {
+    right: 67%;
+    top: 75%;
+    min-width: 30vw;
+  }
+  .donate_flex {
+    font-size: 3vw;
+  }
+  #top_btn {
+    padding: 2vw 4vw;
+  }
   .elements {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -890,6 +833,64 @@ footer {
   .nav-item {
     font-size: 3vw;
     margin: 0 auto;
+  }
+  footer {
+    padding: 2vw 0vw 34vw 2vw;
+  }
+  .footer {
+    font-size: 3vw;
+    padding: 0vw 0vw 20vw 0vw;
+  }
+  .footer-sec-1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-nav {
+    margin: 0 auto;
+    padding-bottom: 5vw;
+  }
+  .footer_contacts {
+    margin: 0 auto;
+    width: 40%;
+  }
+  .footer_props {
+    display: block;
+  }
+  .footer_logo {
+    left: 73%;
+    position: absolute;
+    margin-top: 0vw;
+    margin-left: -41px;
+  }
+  .btn-secondary {
+    font-size: 3vw;
+  }
+  .social_youtube,
+  .social_instagram,
+  .social_facebook {
+    width: 5vw;
+    padding-bottom: 4vw;
+  }
+  .contacts_href {
+    font-size: 2.5vw;
+  }
+  .prop {
+    padding-bottom: 6vw;
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .logo_flogo {
+    width: 15vw;
+    margin: 0vw 0px 0vw 11vw;
+  }
+  .logo_text {
+    font-size: 3vw;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: white;
   }
 }
 

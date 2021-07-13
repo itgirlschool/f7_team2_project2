@@ -320,32 +320,37 @@ footer {
   }
 
 @media screen and (max-width: 990px) {
-    .header_logo {
-        width: 8vw;
-      }
-      .nav-item {
-        font-size: 2vw;
-        margin: 0 auto;
-      }
-      .btn-donate {
-        margin: 0 auto;
-      }
-      .donate_flex {
-        padding: 0.5vw 2.5vw;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        font-size: 1.5vw;
-      }
-      #top {
-        right: 7vw;
-        top: 1vw;
-        position: fixed;
-        margin: 0;
-      }
+  .nav-item {
+    font-size: 2vw;
+    margin: 0 auto;
+  }
+  .btn-donate {
+    margin: 0 auto;
+    min-width: 57.5vw;
+  }
+  .btn-header {
+    padding: 2vw 20vw;
+  }
+  .donate_flex {
+    padding: 0.5vw 2.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2vw;
+  }
+  #top {
+    right: 7vw;
+    top: 1vw;
+    position: fixed;
+    margin: 0;
+    min-width: 14vw;
+  }
+  #top_btn {
+    padding: 1vw;
+  }
       .footer {
         display: block;
         max-width: 990px;
@@ -410,19 +415,28 @@ footer {
                 align-items: center;
         font-size: 3vw;
       }
+      .btn-donate {
+        min-width: 69.5vw;
+      }
       #top {
-        right: 628px;
-        top: 313px;
+        right: 67%;
+        top: 75%;
+        min-width: 30vw;
+      }
+      .donate_flex {
         font-size: 3vw;
-        position: fixed;
-        margin: 0;
+      }
+      #top_btn {
+        padding: 2vw 4vw;
       }
       footer {
         padding: 2vw 0vw 34vw 2vw;
       }
       .footer {
         font-size: 3vw;
-        padding: 0vw 0vw 20vw 0vw;
+        padding: 10vw 0vw 20vw 0vw;
+        margin-top: 5vw;
+        border-top: 1px solid rgba(0, 0, 0, 0.137);
       }
       .footer-sec-1 {
         display: block;
@@ -430,7 +444,8 @@ footer {
         text-align: center;
       }
       .footer-nav {
-        display: none;
+        margin: 0 auto;
+        padding-bottom: 5vw;
       }
       .footer_contacts {
         margin: 0 auto;
